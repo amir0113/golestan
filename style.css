@@ -1,0 +1,205 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: IRANYekanWeb-Bold ;
+    src: url("assest/font/IRANYekanWeb-Bold.ttf");
+    src: url("assest/font/IRANYekanWeb-Bold.woff");
+    src: url("assest/font/IRANYekanWeb-Bold.woff2");
+    
+}
+body{
+    font-family: IRANYekanWeb-Bold ;
+    background-color: #f5f5f5;
+}
+header{
+    background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    position: sticky; 
+    width: 100%; 
+    top: 0; 
+    z-index: 100;
+    .head__wraper{
+        display: flex;
+        justify-content: space-between;
+        margin: 20px;
+    }
+    .logo_searchbox_wraper{
+        display: flex;
+        gap: 15px;   
+        align-items: end;
+        margin-right: 26px;
+        .logo{
+            font-family: IRANYekan, sans-serif;
+            word-spacing: -8px;
+            font-weight: 650;
+            font-size: 34px;
+            .logo1{
+                color:#ee384e;
+            }
+            .logo2{
+                color:#ddb814;
+            }
+        }     
+        .searchbox{
+    }
+        form{
+            
+            input{
+                position: relative;
+                width: 630px;
+                height: 44px;       
+                border-radius: 8px; 
+                border-style: none;
+                background-color: #f0f0f1;
+                color: #818588;
+                padding-right: 55px;
+                font-size: 16px;
+                font-size: 18px;
+                outline: none;
+                margin-right: 10px;
+
+            }
+            .searchlogo{
+                position: absolute;
+                right: 225px;
+                top: 38px;
+                width:22px;
+                height: 22px;
+                color: #8f9498;
+            }
+        }
+    }
+    .sign_shop_wraper{
+        display: flex;
+        margin-left:  55px ;
+
+        .signin{
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 134px;
+            border: 2px solid #e0e0e2;
+            height: 50px;
+            border-radius: 4px;
+            .signlogo{
+                position: absolute;
+                left: 110px;
+                top: 13px;
+                width: 22px;
+                height: 22px;
+            }
+            .sign1{
+                margin-right: 5px;
+                margin-left: 5px;
+                border-left: 2px solid black;
+                padding: 5px;
+                width: fit-content;
+                &:last-child{
+                    border: none;
+                }
+            }
+    
+        }
+    }
+}
+nav{
+    display: flex;
+    margin-right: 75px;
+    justify-content: flex-start;
+    padding-bottom: 15px;
+
+    .navigation{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        list-style: none;
+        gap: 80px;
+        transition: 3000ms;
+        cursor: pointer;
+
+
+        
+        .li{
+            &:hover{       
+                transition: all 3000ms 0ms;         
+                border-bottom:3px solid transparent  ;
+
+            }
+            position: re;
+            .logo{
+                position: absolute;
+                left: 80px;
+                width: 22px;
+                height: 22px;
+             }
+    
+            a{
+                text-decoration: none;
+                color: #62666d;    
+            }
+        }
+        .li2{
+            position: relative;
+         .shop__logo{
+            position: absolute;
+            left: 80px;
+            width: 22px;
+            height: 22px;
+         }
+        }
+        .li3{
+            position: relative;
+         .blog__logo{
+            position: absolute;
+            left: 45px;
+            width: 22px;
+            height: 22px;
+         }
+        }
+        .li4{
+            position: relative;
+         .percentage__logo{
+            position: absolute;
+            left: 161px;
+            width: 22px;
+            height: 22px;
+         }
+        }
+        .li5{
+            position: relative;
+         .flame__logo{
+            position: absolute;
+            left: 115px;
+            width: 22px;
+            height: 22px;
+         }
+        }
+        .li6{
+            position: relative;
+         .call__logo{
+            position: absolute;
+            left: 76px;
+            width: 22px;
+            height: 22px;
+         }
+        }
+        .li7{
+            position: relative;
+         .info__logo{
+            position: absolute;
+            left: 75px;
+            width: 22px;
+            height: 22px;
+         }
+        }
+    
+    }    
+}
